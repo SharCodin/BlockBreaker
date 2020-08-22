@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    private int blockCount = 0;
+    [SerializeField] private int blockCount = 0;
     private int score = 0;
     private TextMeshProUGUI currentScore;
     private PauseMenu pauseMenu;

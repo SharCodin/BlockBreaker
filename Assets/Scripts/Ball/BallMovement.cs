@@ -10,6 +10,13 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private bool ballMoving = false;
     [SerializeField] Transform padPosition = null;
 
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -42,4 +49,11 @@ public class BallMovement : MonoBehaviour
 
         transform.position = new Vector3(padPosition.position.x, transform.position.y, 0);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Call GameWin and Load next scene when all blocks are destroyed.
+        gameManager.GameWin();
+    }
+
 }
