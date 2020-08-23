@@ -32,7 +32,8 @@ public class Brick : MonoBehaviour
             // Destroy brick
             Destroy(gameObject);
 
-
+            // Call GameWin and Load next scene when all blocks are destroyed.
+            gameManager.GameWin();
         }
     }
 }

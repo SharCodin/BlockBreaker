@@ -1,46 +1,18 @@
-﻿using UnityEngine;
-using TMPro;
-using UnityEngine.SceneManagement;
+﻿using TMPro;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private int blockCount = 0;
-    private int score = 0;
-    private TextMeshProUGUI currentScore;
+    private static int score = 0;
+    [SerializeField] private TextMeshProUGUI currentScore = null;
     private PauseMenu pauseMenu;
-
-    // Assigned in inspector
-    [SerializeField] private GameObject scoreText = null;
-
-    // Awake
-    private void Awake()
-    {
-        // Implementing Singleton pattern to force score to persist through levels
-        // Singleton pattern - there can only be one.
-
-        // Get the number of GameManager objects in the scene.
-        int gameManagerCount = FindObjectsOfType<GameManager>().Length;
-
-        // Check if there are multiple instances of the object, destroy if yes. 
-        // Force object to persist when loading next scene.
-        if (gameManagerCount > 1)
-        {
-            // Change gameObject to inactive to prevent attached scripts from running and to prevent scripts that refer to this from running.
-            gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
 
     // Start
     private void Start()
     {
-        // Cached Reference to score text
-        currentScore = scoreText.GetComponent<TextMeshProUGUI>();
+        // Caching pauseMenu
         pauseMenu = FindObjectOfType<PauseMenu>();
 
         // Initializing score

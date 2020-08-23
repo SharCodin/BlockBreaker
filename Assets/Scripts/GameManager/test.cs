@@ -24,7 +24,7 @@ public class test : MonoBehaviour
         {
             float xPos = cameraTransform.position.x + 1f;
             cameraTransform.position = new Vector3(xPos, 0, 0);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.03f);
         }
     }
 
