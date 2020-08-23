@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Count number of blocks
-    public void CountBrick()
+    public void CountBrick(int blockNumber)
     {
-        blockCount += 1;
+        blockCount += blockNumber;
     }
 
     // Update block count and score

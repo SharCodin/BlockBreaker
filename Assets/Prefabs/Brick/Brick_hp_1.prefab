@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3180316168316342343}
   - component: {fileID: 498058674}
   m_Layer: 0
-  m_Name: Brick
+  m_Name: Brick_hp_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9de87e5b6663641a85595bd65877aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockHealth: 1
+  blockSprites: []
   audioClip: {fileID: 8300000, guid: 280e50685645d314d97ee0f776ce62ae, type: 3}
 --- !u!82 &498058674
 AudioSource:
