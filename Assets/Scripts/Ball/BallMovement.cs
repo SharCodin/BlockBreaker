@@ -40,4 +40,5 @@ public class BallMovement : MonoBehaviour
 
         transform.position = new Vector3(padPosition.position.x, transform.position.y, 0);
     }
+
 }

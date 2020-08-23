@@ -8,6 +8,8 @@ TagManager:
   - Ball
   - Brick
   - Border
+  - Vertical Border
+  - Horizontal Border
   layers:
   - Default
   - TransparentFX
