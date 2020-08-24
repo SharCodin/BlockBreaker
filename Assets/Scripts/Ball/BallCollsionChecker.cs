@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class BallCollsionChecker : MonoBehaviour
 {
@@ -59,8 +58,10 @@ public class BallCollsionChecker : MonoBehaviour
     private IEnumerator ResetGravityScale()
     {
         rb.gravityScale = 1.0f;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         rb.gravityScale = 0.0f;
     }
+
+
 
 }

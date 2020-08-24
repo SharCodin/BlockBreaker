@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_hp_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3555627397031742229, guid: 8e97d72a9921faa428a6560090ed71c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3555627397031742230, guid: 8e97d72a9921faa428a6560090ed71c4, type: 3}
       propertyPath: m_Sprite
       value: 

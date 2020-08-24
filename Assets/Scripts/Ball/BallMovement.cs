@@ -19,13 +19,20 @@ public class BallMovement : MonoBehaviour
     {
         if (!ballMoving)
         {
-            ballGluePad();
-            ballStartMoving();
+            BallStartMoving();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!ballMoving)
+        {
+            BallGluePaddle();
         }
     }
 
     // Start ball movement
-    private void ballStartMoving()
+    private void BallStartMoving()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -35,7 +42,7 @@ public class BallMovement : MonoBehaviour
     }
 
     // Position ball relative to pad
-    private void ballGluePad()
+    private void BallGluePaddle()
     {
 
         transform.position = new Vector3(padPosition.position.x, transform.position.y, 0);

@@ -4,8 +4,8 @@ public class PadMovement : MonoBehaviour
 {
     // Variables
     [SerializeField] float movementSpeed = 10.0f;
-    private float leftBoundary = -8f;
-    private float rightBoundary = 8f;
+    [SerializeField] private float leftBoundary = -8f;
+    [SerializeField] private float rightBoundary = 8f;
 
     // Update is called once per frame
     void Update()
