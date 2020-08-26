@@ -10,6 +10,7 @@ TagManager:
   - Border
   - Vertical Border
   - Horizontal Border
+  - Game Over Menu
   layers:
   - Default
   - TransparentFX

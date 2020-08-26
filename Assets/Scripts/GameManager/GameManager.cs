@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         if (blockCount <= 0)
         {
             // Current room beat
-            pauseMenu.startWaitForLevelComplete();
+            pauseMenu.StartWaitForLevelComplete();
         }
     }
 

@@ -8,9 +8,11 @@ public class PauseMenu : MonoBehaviour
     private int currentBuildIndex;
     private GameManager gameManager;
 
+
     // Assign in inspector
     [SerializeField] private GameObject pauseMenu = null;
-    [SerializeField] private GameObject LevelCompleteMenu = null;
+    [SerializeField] private GameObject levelCompleteMenu = null;
+    [SerializeField] private GameObject gameOver = null;
 
     // Start is called before the first frame update
     void Start()
@@ -32,20 +34,20 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Display level complete and move to next level
-    private IEnumerator waitForLevelComplete()
+    private IEnumerator WaitForLevelComplete()
     {
         Time.timeScale = 0.0f;
-        LevelCompleteMenu.SetActive(true);
+        levelCompleteMenu.SetActive(true);
         yield return new WaitForSecondsRealtime(1.5f);
-        LevelCompleteMenu.SetActive(false);
+        levelCompleteMenu.SetActive(false);
         LoadNextScene();
         Time.timeScale = 1.0f;
     }
 
     // Start waitForLevelComplete coroutine
-    public void startWaitForLevelComplete()
+    public void StartWaitForLevelComplete()
     {
-        StartCoroutine(waitForLevelComplete());
+        StartCoroutine(WaitForLevelComplete());
     }
 
     // Pause and resume game
@@ -69,6 +71,13 @@ public class PauseMenu : MonoBehaviour
     private void LoadNextScene()
     {
         SceneManager.LoadScene(currentBuildIndex + 1);
+    }
+
+    // Game over menu
+    public void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        gameOver.SetActive(true);
     }
 
 }

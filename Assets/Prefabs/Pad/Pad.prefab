@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1455971567220987924}
   - component: {fileID: 1455971567220987922}
   - component: {fileID: 1455971567220987923}
+  - component: {fileID: 500272504}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Pad
@@ -132,3 +133,16 @@ PolygonCollider2D:
       - {x: 0.88, y: -0.44}
       - {x: 1, y: -0.3}
       - {x: 1, y: 0.32}
+--- !u!114 &500272504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455971567220987927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad654b51216de374b94996e85d346a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLife: 3
