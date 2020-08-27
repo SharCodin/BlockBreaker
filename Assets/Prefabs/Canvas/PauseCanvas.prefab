@@ -403,7 +403,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -461,6 +461,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 6779514941478356204}
   levelCompleteMenu: {fileID: 5146653193711973037}
   gameOver: {fileID: 8435182588886078297}
+  playerPaddle: {fileID: 0}
 --- !u!1 &6779514940335373058
 GameObject:
   m_ObjectHideFlags: 0

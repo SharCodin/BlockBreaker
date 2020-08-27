@@ -14,7 +14,6 @@ public class LoseCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            Debug.Log("Lose");
             currentPlayer.LoseLife();
         }
 

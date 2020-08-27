@@ -2,11 +2,13 @@
 
 public class BallMovement : MonoBehaviour
 {
-
-    [SerializeField] float ballSpeed = 5.0f;
     private Rigidbody2D rb;
+
+    [SerializeField] private float ballSpeed = 5.0f;
     [SerializeField] private bool ballMoving = false;
-    [SerializeField] Transform padPosition = null;
+    [SerializeField] private Transform padPosition = null;
+
+    private static bool isPlayTest = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -21,6 +23,17 @@ public class BallMovement : MonoBehaviour
         {
             BallStartMoving();
         }
+
+        // for play testing game from start.
+        if (Input.GetKeyDown(KeyCode.F9))
+            isPlayTest = true;
+
+        if (isPlayTest && !ballMoving)
+        {
+            rb.velocity = new Vector2(1, 15);
+            ballMoving = true;
+        }
+
     }
 
     private void FixedUpdate()
@@ -29,6 +42,12 @@ public class BallMovement : MonoBehaviour
         {
             BallGluePaddle();
         }
+
+        if (isPlayTest && ballMoving)
+        {
+            isPlayTesting();
+        }
+
     }
 
     // Start ball movement
@@ -46,6 +65,16 @@ public class BallMovement : MonoBehaviour
     {
 
         transform.position = new Vector3(padPosition.position.x, transform.position.y, 0);
+    }
+
+    public void SetBallMovingBool()
+    {
+        ballMoving = false;
+    }
+
+    private void isPlayTesting()
+    {
+        padPosition.position = new Vector3(transform.position.x,padPosition.position.y, padPosition.position.z);
     }
 
 }

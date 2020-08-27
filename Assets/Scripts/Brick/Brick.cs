@@ -41,7 +41,6 @@ public class Brick : MonoBehaviour
             else
             {
                 int index = blockHealth - 1;
-                Debug.Log(index);
                 spriteRenderer.sprite = blockSprites[index];
             }
 

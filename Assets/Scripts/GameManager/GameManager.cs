@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static int score = 0;
+    private PauseMenu pauseMenu;
+    private static int highScore = 0;
 
     [SerializeField] private int blockCount = 0;
-    private static int score = 0;
     [SerializeField] private TextMeshProUGUI currentScore = null;
-    private PauseMenu pauseMenu;
 
     // Start
     private void Start()
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
 
         // Initializing score
         UpdateScoreUI();
+
     }
 
     // Count number of blocks
@@ -28,8 +30,16 @@ public class GameManager : MonoBehaviour
     // Update block count and score
     public void Score()
     {
+
         blockCount -= 1;
         score += 1;
+        
+        if (score > highScore)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("highScore", highScore);
+        }
+
     }
 
     // Update the score on screen.
@@ -53,4 +63,15 @@ public class GameManager : MonoBehaviour
     {
         return blockCount;
     }
+
+    public void SetScore()
+    {
+        score = 0;
+    }
+
+    public void SetHighScore(int aHighScore)
+    {
+        highScore = aHighScore;
+    }
+
 }

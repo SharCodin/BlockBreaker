@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject levelCompleteMenu = null;
     [SerializeField] private GameObject gameOver = null;
+    [SerializeField] private Player playerPaddle = null;
 
     // Start is called before the first frame update
     void Start()
@@ -77,7 +78,16 @@ public class PauseMenu : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0.0f;
+
         gameOver.SetActive(true);
+        
+        SceneManager.LoadScene("aTitleScreen");
+
+        // Reset static variables: score, playerlives
+        gameManager.SetScore();
+        playerPaddle.SetPlayerLifePoint(3);
+        
+        Time.timeScale = 1.0f;
     }
 
 }
