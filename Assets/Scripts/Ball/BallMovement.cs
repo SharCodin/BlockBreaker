@@ -74,7 +74,7 @@ public class BallMovement : MonoBehaviour
 
     private void isPlayTesting()
     {
-        padPosition.position = new Vector3(transform.position.x,padPosition.position.y, padPosition.position.z);
+        padPosition.position = new Vector3(transform.position.x + 0.35f,padPosition.position.y, padPosition.position.z);
     }
 
 }

@@ -3,9 +3,11 @@
 public class Brick : MonoBehaviour
 {
     private GameManager gameManager;
+    private SpriteRenderer spriteRenderer;
+
     [SerializeField] private int blockHealth = 3;
     [SerializeField] private Sprite[] blockSprites = null;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Transform brickParticles = null;
 
     // Assign in inspector
     [SerializeField] private AudioClip audioClip = null;
@@ -33,6 +35,8 @@ public class Brick : MonoBehaviour
             blockHealth -= 1;
             if (blockHealth <= 0)
             {
+                Transform particleBrick = Instantiate(brickParticles, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.5f, transform.position.z), Quaternion.identity);
+                Destroy(particleBrick.gameObject, 1.0f);
                 Destroy(gameObject);
 
                 // Call GameWin and Load next scene when all blocks are destroyed.

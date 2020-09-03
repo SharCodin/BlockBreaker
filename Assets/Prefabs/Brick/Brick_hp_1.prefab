@@ -121,6 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockHealth: 1
   blockSprites: []
+  brickParticles: {fileID: 2728484535361160108, guid: 2eb5c87b1930f004ab6b52353e765218, type: 3}
   audioClip: {fileID: 8300000, guid: 280e50685645d314d97ee0f776ce62ae, type: 3}
 --- !u!82 &498058674
 AudioSource:
