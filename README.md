@@ -7,7 +7,7 @@ Tap on the top middle of the screen to launch ball.
 
 Get a high score by conquering 10 levels.
 
-### Find me on
+### Find me
 * @gaming_shar; https://twitter.com/gaming_shar
 * itch.io; https://gamingshar.itch.io/
 
