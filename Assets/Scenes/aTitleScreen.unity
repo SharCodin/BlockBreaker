@@ -1293,10 +1293,10 @@ MonoBehaviour:
   m_Text: 'HOW TO PLAY:
 
 
-    Left and Right arrows to move.
+    Tap Left / Right to move Paddle
 
-    Space to launch
-    ball.
+    Tap Top Middle
+    to launch ball.
 
 
     Can you conquer all 10 levels!
@@ -1367,26 +1367,6 @@ PrefabInstance:
     - target: {fileID: 1098787908861255604, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
       propertyPath: m_Name
       value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098787910243542056, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098787910243542068, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390623550846379769, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390623550846379769, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390623550846379769, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -305
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}

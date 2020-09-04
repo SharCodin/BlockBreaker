@@ -12,7 +12,7 @@ public class PadMovement : MonoBehaviour
     private void Start()
     {
         // caching width
-        halfScreen = Screen.width / 2; 
+        halfScreen = Screen.width / 2;
     }
 
     // Update is called once per frame
@@ -52,7 +52,7 @@ public class PadMovement : MonoBehaviour
 
     private void CheckForInput()
     {
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && (Input.mousePosition.y < (Screen.height / 2)))
         {
             if (Input.mousePosition.x < halfScreen)
             {
@@ -66,7 +66,7 @@ public class PadMovement : MonoBehaviour
                 if (transform.position.x < rightBoundary)
                     transform.position = transform.position + new Vector3(movementSpeed * Time.deltaTime, 0, 0);
             }
-            
+
         }
 
     }
