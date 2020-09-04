@@ -7,12 +7,20 @@ public class PadMovement : MonoBehaviour
     [SerializeField] private float leftBoundary = -8f;
     [SerializeField] private float rightBoundary = 8f;
 
+    private float halfScreen;
+
+    private void Start()
+    {
+        // caching width
+        halfScreen = Screen.width / 2; 
+    }
+
     // Update is called once per frame
     void Update()
     {
         //PadMovementHorizontally();
 
-        CheckForInput()
+        CheckForInput();
     }
 
     // Pad movement in the x-axis
@@ -46,8 +54,19 @@ public class PadMovement : MonoBehaviour
     {
         if(Input.GetMouseButton(0))
         {
-            if (transform.position.x > leftBoundary)
-                transform.position = transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, 0);
+            if (Input.mousePosition.x < halfScreen)
+            {
+                if (transform.position.x > leftBoundary)
+                {
+                    transform.position = transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, 0);
+                }
+            }
+            else
+            {
+                if (transform.position.x < rightBoundary)
+                    transform.position = transform.position + new Vector3(movementSpeed * Time.deltaTime, 0, 0);
+            }
+            
         }
 
     }
