@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fab12d9433caca45b13f97f3d2c95dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 9
+  movementSpeed: 10
   leftBoundary: -7.8
   rightBoundary: 7.8
 --- !u!60 &1455971567220987923
@@ -147,4 +147,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLifeUI: {fileID: 0}
   ball: {fileID: 0}
-  playerLife: 3
+  playerLife: 5

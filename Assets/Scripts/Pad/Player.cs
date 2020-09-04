@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Vector3 ballInitialPosition;
     private Vector3 paddleInitialPosition;
     
-    private static int playerLifePoint = 3;
+    private static int playerLifePoint = 5;
 
     [SerializeField] private TextMeshProUGUI playerLifeUI = null;
     [SerializeField] private Rigidbody2D ball = null;
