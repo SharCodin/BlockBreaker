@@ -314,10 +314,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 618555489440767652}
-    - target: {fileID: 3988932952607018099, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1455971567527937359}
     - target: {fileID: 6779514939544652962, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -406,25 +402,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8604128297572495468, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+    - target: {fileID: 8435182588886078297, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8604128297572495468, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1455971567527937359}
-    - target: {fileID: 8604128297572495468, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PadMovement, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8604128297572495468, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8604128297572495468, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
@@ -1199,17 +1179,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 590a6087a78ac8f4cbac38e6c7639a07, type: 3}
---- !u!114 &1455971567527937359 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1455971567220987922, guid: 590a6087a78ac8f4cbac38e6c7639a07, type: 3}
-  m_PrefabInstance: {fileID: 1455971567527937358}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fab12d9433caca45b13f97f3d2c95dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5339420821584641897
 PrefabInstance:
   m_ObjectHideFlags: 0

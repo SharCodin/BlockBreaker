@@ -281,10 +281,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 734430218}
-    - target: {fileID: 3767592567743639669, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: launchBallButton
-      objectReference: {fileID: 0}
     - target: {fileID: 6779514939544652962, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

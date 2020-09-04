@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -37,11 +38,34 @@ public class PauseMenu : MonoBehaviour
     // Display level complete and move to next level
     private IEnumerator WaitForLevelComplete()
     {
+
+        levelCompleteMenu.GetComponentInChildren<TextMeshProUGUI>().text = 
+            "Level " + SceneManager.GetActiveScene().buildIndex + " Completed" + "\n\n\n" + "Score: " + gameManager.GetCurrentScore().ToString();
+
         Time.timeScale = 0.0f;
         levelCompleteMenu.SetActive(true);
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(2.5f);
         levelCompleteMenu.SetActive(false);
         LoadNextScene();
+        Time.timeScale = 1.0f;
+    }
+
+    private IEnumerator GameOverScreen()
+    {
+        Time.timeScale = 0.0f;
+
+        gameOver.GetComponentInChildren<TextMeshProUGUI>().text = "GAME OVER" + "\n\n\n" + "Score: " + gameManager.GetCurrentScore().ToString();
+
+        gameOver.SetActive(true);
+
+        yield return new WaitForSecondsRealtime(3.0f);
+
+        SceneManager.LoadScene("aTitleScreen");
+       
+        // Reset static variables: score, playerlives
+        gameManager.SetScore();
+        playerPaddle.SetPlayerLifePoint(3);
+
         Time.timeScale = 1.0f;
     }
 
@@ -77,17 +101,7 @@ public class PauseMenu : MonoBehaviour
     // Game over menu
     public void GameOver()
     {
-        Time.timeScale = 0.0f;
-
-        gameOver.SetActive(true);
-        
-        SceneManager.LoadScene("aTitleScreen");
-
-        // Reset static variables: score, playerlives
-        gameManager.SetScore();
-        playerPaddle.SetPlayerLifePoint(3);
-        
-        Time.timeScale = 1.0f;
+        StartCoroutine(GameOverScreen());
     }
 
 }

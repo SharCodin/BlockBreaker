@@ -74,4 +74,9 @@ public class GameManager : MonoBehaviour
         highScore = aHighScore;
     }
 
+    public int GetCurrentScore()
+    {
+        return score;
+    }
+
 }

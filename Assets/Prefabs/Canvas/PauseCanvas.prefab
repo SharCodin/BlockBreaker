@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -270}
-  m_SizeDelta: {x: 446.52478, y: 204.90036}
+  m_AnchoredPosition: {x: -9.9, y: -278.6}
+  m_SizeDelta: {x: 698.4529, y: 419.7803}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2644477904212427259
 CanvasRenderer:
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.4752197, y: 0, z: 0, w: -0.000045776367}
+  m_margin: {x: -0.005290477, y: 2.4697719, z: 2.469649, w: -0.000045776367}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2, y: 158}
-  m_SizeDelta: {x: 434.12854, y: 197.9346}
+  m_AnchoredPosition: {x: -0, y: 138.2}
+  m_SizeDelta: {x: 925.6356, y: 237.45273}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8650881444771161824
 CanvasRenderer:
@@ -300,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -270}
-  m_SizeDelta: {x: 446.52478, y: 100}
+  m_AnchoredPosition: {x: 12.3, y: -267.5}
+  m_SizeDelta: {x: 792.3087, y: 406.26556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3770779702326964398
 CanvasRenderer:
@@ -331,7 +331,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: 'Game Over
+
+
+
+    Score: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -536,7 +540,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
