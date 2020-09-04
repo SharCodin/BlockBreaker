@@ -3,6 +3,7 @@
 public class BallMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private bool launchBall = false;
 
     [SerializeField] private float ballSpeed = 5.0f;
     [SerializeField] private bool ballMoving = false;
@@ -22,6 +23,7 @@ public class BallMovement : MonoBehaviour
         if (!ballMoving)
         {
             BallStartMoving();
+            launchBall = false;
         }
 
         // for play testing game from start.
@@ -53,7 +55,8 @@ public class BallMovement : MonoBehaviour
     // Start ball movement
     private void BallStartMoving()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        if (launchBall)
         {
             rb.velocity = new Vector2(0, ballSpeed);
             ballMoving = true;
@@ -77,4 +80,8 @@ public class BallMovement : MonoBehaviour
         padPosition.position = new Vector3(transform.position.x + 0.35f,padPosition.position.y, padPosition.position.z);
     }
 
+    public void launchBallButton()
+    {
+        launchBall = true;
+    }
 }

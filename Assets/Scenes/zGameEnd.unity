@@ -235,10 +235,38 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 507.65256
       objectReference: {fileID: 0}
+    - target: {fileID: 1805400432677059330, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805400432677059330, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 504.16843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805400432677059330, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805400432677059330, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 918.1753
+      objectReference: {fileID: 0}
     - target: {fileID: 3731999952943985942, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
       propertyPath: playerPaddle
       value: 
       objectReference: {fileID: 215072828}
+    - target: {fileID: 3767592567743639669, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1768150245}
+    - target: {fileID: 3767592567743639669, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGameAfterGameEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767592567743639669, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RestartGame, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5146653193711973037, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -346,6 +374,10 @@ PrefabInstance:
         @gaming_shar
 
         https://gamingshar.itch.io/'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435182588886078297, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c05a6a4d9e1314d449ccadfc1d7bedbb, type: 3}
@@ -476,6 +508,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d3c8c04ecb92524993b7e82b7ebbcef, type: 3}
+--- !u!1 &1768150244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768150246}
+  - component: {fileID: 1768150245}
+  m_Layer: 0
+  m_Name: Restart Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1768150245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768150244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3900029999d284ab1dd6ffa3a1dea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1768150246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768150244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 480, y: 270, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1862967463
 PrefabInstance:
   m_ObjectHideFlags: 0

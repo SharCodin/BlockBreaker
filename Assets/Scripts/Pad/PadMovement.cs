@@ -10,7 +10,9 @@ public class PadMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PadMovementHorizontally();
+        //PadMovementHorizontally();
+
+        CheckForInput()
     }
 
     // Pad movement in the x-axis
@@ -27,4 +29,28 @@ public class PadMovement : MonoBehaviour
                 transform.position = transform.position + new Vector3(movementSpeed * Time.deltaTime, 0, 0);
         }
     }
+
+    public void PadMoveLeft()
+    {
+        if (transform.position.x > leftBoundary)
+            transform.position = transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, 0);
+    }
+
+    public void PadMoveRight()
+    {
+        if (transform.position.x < rightBoundary)
+            transform.position = transform.position + new Vector3(movementSpeed * Time.deltaTime, 0, 0);
+    }
+
+    private void CheckForInput()
+    {
+        if(Input.GetMouseButton(0))
+        {
+            if (transform.position.x > leftBoundary)
+                transform.position = transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, 0);
+        }
+
+    }
+
+
 }
