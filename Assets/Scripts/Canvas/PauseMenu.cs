@@ -64,7 +64,7 @@ public class PauseMenu : MonoBehaviour
        
         // Reset static variables: score, playerlives
         gameManager.SetScore();
-        playerPaddle.SetPlayerLifePoint(3);
+        playerPaddle.SetPlayerLifePoint(5);
 
         Time.timeScale = 1.0f;
     }

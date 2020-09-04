@@ -17,6 +17,18 @@ public class BallMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        if (FindObjectOfType<Assistance>().AssistedOnOff())
+        {
+            ballSpeed = 7.0f;
+        }
+        else
+        {
+            ballSpeed = 10.0f;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
