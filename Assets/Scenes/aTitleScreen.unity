@@ -353,7 +353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -153.6, y: -158.2}
+  m_AnchoredPosition: {x: -153.5, y: -158.25}
   m_SizeDelta: {x: 263.81024, y: 196.49011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666332331
@@ -556,7 +556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -153.6, y: 161.1}
+  m_AnchoredPosition: {x: -153.5, y: 161}
   m_SizeDelta: {x: 263.80774, y: 164.10016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748524220
@@ -959,7 +959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -93, y: -24.799}
+  m_AnchoredPosition: {x: -93, y: -24.75}
   m_SizeDelta: {x: 182.92749, y: 49.593567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327199284
@@ -1091,7 +1091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -851.3, y: -24.799}
+  m_AnchoredPosition: {x: -851, y: -24.75}
   m_SizeDelta: {x: 218.38574, y: 49.593567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581790921
@@ -1482,7 +1482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -120, y: 191.7}
+  m_AnchoredPosition: {x: -120, y: 191.75}
   m_SizeDelta: {x: 520, y: 244.48831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938050334
@@ -1595,6 +1595,10 @@ PrefabInstance:
     - target: {fileID: 1098787908861255604, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098787910243542056, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c73a3065bdd8e0449426222b0e22c21, type: 3}

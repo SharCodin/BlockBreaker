@@ -1230,6 +1230,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2583978226884610580, guid: 143f21b8eb0b37242ad042d19da31843, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583978226884610580, guid: 143f21b8eb0b37242ad042d19da31843, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6424913275528528553, guid: 143f21b8eb0b37242ad042d19da31843, type: 3}
       propertyPath: m_Name
       value: AssistMode

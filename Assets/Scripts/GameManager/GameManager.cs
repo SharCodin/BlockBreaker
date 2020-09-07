@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     private static int score = 0;
     private PauseMenu pauseMenu;
     private static int highScore = 0;
+    private bool assistOnOffbool;
 
     [SerializeField] private int blockCount = 0;
     [SerializeField] private TextMeshProUGUI currentScore = null;
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     {
         // Caching pauseMenu
         pauseMenu = FindObjectOfType<PauseMenu>();
+
+        assistOnOffbool = FindObjectOfType<Assistance>().AssistedOnOff();
 
         // Initializing score
         UpdateScoreUI();
@@ -32,7 +35,14 @@ public class GameManager : MonoBehaviour
     {
 
         blockCount -= 1;
-        score += 1;
+        if (assistOnOffbool)
+        {
+            score += 1;
+        }
+        else
+        {
+            score += 2;
+        }
         
         if (score > highScore)
         {
